@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contents - Healthshare</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center p-4 border-b">
+        <div class="flex items-center">
+            <img src="logo.png" alt="Healthshare Logo" class="h-8 w-8 mr-2">
+            <span class="text-2xl font-bold">
+                <span class="text-red-500">Health</span><span class="text-black">Share</span>
+            </span>
+        </div>
+        <div class="flex items-center space-x-6">
+            <a href="index.html" class="text-gray-700 hover:text-gray-900">Home</a>
+            <a href="aboutUs.html" class="text-gray-700 hover:text-gray-900">About Us</a>
+            <a href="Content.html" class="text-gray-700 hover:text-gray-900 font-bold">Contents</a>
+            <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Login with Email</button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="text-center py-16 bg-gray-50">
+        <h1 class="text-4xl font-bold mb-4">Latest Health Articles</h1>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+            Explore our collection of expert-written articles on nutrition, healthy living, and wellness.
+        </p>
+    </header>
+
+    <!-- Articles Grid -->
+    <main class="max-w-6xl mx-auto px-6 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Article 1 -->
+            <article onclick="window.location.href='article1.html'" class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:scale-105 cursor-pointer group">
+                <img src="https://images.unsplash.com/photo-1543362906-acfc16c67564?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Healthy Eating Guide" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold mb-3 group-hover:text-red-500 transition-colors duration-300">Healthy Eating Guide</h2>
+                    <p class="text-gray-600 mb-4">
+                        Discover the art of balanced nutrition with our comprehensive eating guide. Learn how to make smart food choices, understand portion control, and create delicious, nutritious meals that fuel your body and mind.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-500">5 min read</span>
+                        <a href="article1.html" class="text-red-500 hover:text-red-600 font-medium">Read More →</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 2 -->
+            <article onclick="window.location.href='article2.html'" class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:scale-105 cursor-pointer group">
+                <img src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Meal Planning Tips" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold mb-3 group-hover:text-red-500 transition-colors duration-300">Essential Meal Planning Tips for Busy Lives</h2>
+                    <p class="text-gray-600 mb-4">
+                        Take the guesswork out of healthy eating with our expert meal planning tips. From grocery shopping strategies to meal prep techniques, we'll help you develop sustainable eating habits that fit your lifestyle.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-500">4 min read</span>
+                        <a href="article2.html" class="text-red-500 hover:text-red-600 font-medium">Read More →</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 3 -->
+            <article onclick="window.location.href='article3.html'" class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:scale-105 cursor-pointer group">
+                <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=2053&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mediterranean Diet" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold mb-3 group-hover:text-red-500 transition-colors duration-300">The Impact of Mediterranean Diet on Heart Health</h2>
+                    <p class="text-gray-600 mb-4">
+                        Mediterranean diet can significantly reduce the risk of cardiovascular disease. This dietary pattern, rich in fruits.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-500">7 min read</span>
+                        <a href="article3.html" class="text-red-500 hover:text-red-600 font-medium">Read More →</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white p-6">
+        <div class="text-center">
+            <p class="mb-2">Contact us at: <a href="mailto:info@healthshare.com" class="text-red-500 hover:text-red-400">info@healthshare.com</a></p>
+            <p>&copy; 2023 Healthshare. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthshare</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes imageFloat {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .animate-fade-in-up {
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .animate-image-float {
+            animation: imageFloat 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center p-4 border-b animate-fade-in-up">
+        <!-- Logo and Brand Name -->
+        <div class="flex items-center">
+            <img src="logo.png" alt="Healthshare Logo" class="h-8 w-8 mr-2">
+            <span class="text-2xl font-bold">
+                <span class="text-red-500">Health</span><span class="text-black">Share</span>
+            </span>
+        </div>
+        <!-- Navigation Links -->
+        <div class="flex items-center space-x-6">
+            <a href="index.html" class="text-gray-700 hover:text-gray-900 font-bold">Home</a>
+            <a href="aboutUs.html" class="text-gray-700 hover:text-gray-900">About Us</a>
+            <a href="Content.html" class="text-gray-700 hover:text-gray-900 ">Contents</a>
+            <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Login with Email</button>
+        </div>
+    </nav>
+
+    <!-- Main Hero Section -->
+    <section class="flex items-center justify-between p-20">
+        <!-- Text Content -->
+        <div class="max-w-lg animate-fade-in-up">
+            <h1 class="text-5xl font-bold mb-4">Welcome to Healthshare</h1>
+            <p class="text-gray-600 mb-6">Your trusted source for health information and community support.</p>
+            <a href="Content.html" class="bg-red-500 text-white px-6 py-3 rounded hover:bg-red-600 inline-block">Get Started</a>
+        </div>
+        <!-- Image -->
+        <div>
+            <img src="https://w0.peakpx.com/wallpaper/654/542/HD-wallpaper-healthy-food-heart-of-fruits-and-vegetables-good-nutrition-diet-slimming-weight-loss.jpg" alt="Health Image" class="rounded-lg w-full h-[400px] object-cover animate-image-float">
+        </div>
+    </section>
+
+    <!-- Center Aligned Hero Section -->
+    <section class="text-center py-16 bg-gray-50 animate-fade-in-up">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-4">Learn more about your health</h2>
+            <p class="text-gray-600 mb-8">Don't wait until it's too late. Take control of your health today with our comprehensive collection of health articles and expert advice.</p>
+            <a href="aboutUs.html" class="bg-red-500 text-white px-6 py-3 rounded hover:bg-red-600 inline-block">Learn More About Us</a>
+        </div>
+    </section>
+
+    <!-- Left Image Hero Section -->
+    <section class="flex items-center justify-between p-20 group">
+        <div class="w-1/2 pr-8 transform transition-transform duration-300 group-hover:scale-105">
+            <img src="https://images.unsplash.com/photo-1543362906-acfc16c67564?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Healthy Food" class="rounded-lg w-full h-[400px] object-cover">
+        </div>
+        <div class="w-1/2 max-w-lg animate-fade-in-up">
+            <h2 class="text-3xl font-bold mb-4">Healthy Eating Guide</h2>
+            <p class="text-gray-600 mb-6">
+                Discover the art of balanced nutrition with our comprehensive eating guide. Learn how to make smart food choices, understand portion control, and create delicious, nutritious meals that fuel your body and mind.
+            </p>
+            <a href="article1.html" class="bg-red-500 text-white px-6 py-3 rounded hover:bg-red-600 inline-block">
+                Read More
+            </a>              
+        </div>
+    </section>
+
+    <!-- Right Image Hero Section -->
+    <section class="flex items-center justify-between p-20 bg-gray-50 group">
+        <div class="w-1/2 max-w-lg animate-fade-in-up">
+            <h2 class="text-3xl font-bold mb-4">Meal Planning Tips</h2>
+            <p class="text-gray-600 mb-6">
+                Take the guesswork out of healthy eating with our expert meal planning tips. From grocery shopping strategies to meal prep techniques, we'll help you develop sustainable eating habits that fit your lifestyle.
+            </p>
+            <a href="article2.html" class="bg-red-500 text-white px-6 py-3 rounded hover:bg-red-600 inline-block">
+                Read More
+            </a>
+        </div>
+        <div class="w-1/2 pl-8 transform transition-transform duration-300 group-hover:scale-105">
+            <img src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Meal Planning" class="rounded-lg w-full h-[400px] object-cover">
+        </div>
+    </section>
+
+    <section class="flex items-center justify-between p-20 group">
+        <div class="w-1/2 pr-8 transform transition-transform duration-300 group-hover:scale-105">
+            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=2053&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Healthy Food" class="rounded-lg w-full h-[400px] object-cover">
+        </div>
+        <div class="w-1/2 max-w-lg animate-fade-in-up">
+            <h2 class="text-3xl font-bold mb-4">The Impact of Mediterranean Diet on Heart Health</h2>
+            <p class="text-gray-600 mb-6">
+                Did you know that researchers' studies have shown that adopting a Mediterranean diet can significantly reduce the risk of cardiovascular disease. This dietary pattern, rich in fruits, vegetables, whole grains, and healthy fats, has been associated with numerous health benefits that extend beyond heart health.
+            </p>
+            <a href="article3.html" class="bg-red-500 text-white px-6 py-3 rounded hover:bg-red-600 inline-block">
+                Read More
+            </a>              
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white p-6 animate-fade-in-up">
+        <div class="text-center">
+            <p class="mb-2">Contact us at: <a href="mailto:info@healthshare.com" class="text-red-500 hover:text-red-400">info@healthshare.com</a></p>
+            <p>&copy; 2023 Healthshare. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
